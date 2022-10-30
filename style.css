@@ -34,9 +34,117 @@ body {
 }
 
 .home {
-  background-size: cover;
   height: 100vh;
-  background-position: center bottom;
   background-repeat: no-repeat;
-  filter: brightness(0.6);
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.home__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 200px);
+}
+.nav {
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__list {
+  display: flex;
+}
+.nav__item {
+  margin-right: 45px;
+}
+.nav__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+}
+.nav__link:last-child {
+  margin-right: 0;
+}
+.nav__link::before {
+  filter: brightness(10);
+}
+.nav__link:hover {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #2352de;
+  transition: color 0.3s linear;
+}
+.home__titles {
+  margin-top: 200px;
+}
+.home__small--title {
+  font-size: 30px;
+  line-height: 65px;
+  align-items: center;
+  color: #ffffff;
+}
+.home__title {
+  font-size: 48px;
+  line-height: 65px;
+  align-items: center;
+  color: #ffffff;
+}
+.home__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+.home__link::before {
+  content: "";
+  position: absolute;
+  background-image: url(./img/icons/arrow.svg);
+  background-repeat: no-repeat;
+  width: 37px;
+  height: 21px;
+  /* top: 50px; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: arrow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+/* @keyframes arrow {
+  from {
+    top: 40px;
+  }
+  to {
+    top: 50px;
+  }
+} */
+@keyframes arrow{
+  0%{
+    top: 40px;
+  }
+  50%{
+    top: 60px;
+  }
+  100%{
+    top: 40px;
+  }
 }
