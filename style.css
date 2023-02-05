@@ -370,3 +370,128 @@ body {
 .project__link:hover .project__image::after {
   background-image: url(./img/icons/vector.svg);
 }
+
+/* contact */
+.contact{
+  padding-top: 136px;
+}
+.contact__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__social {
+  max-width: 530px;
+  width: 100%;
+}
+.contact__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  margin-bottom: 30px;
+}
+.contact__form{
+  max-width: 540px;
+  width: 100%;
+}
+.contact__form-text{
+  margin-bottom: 10px;
+}
+.contact__number {
+  color: #2352de;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  display: block;
+  margin-bottom: 15px;
+}
+.contact__mail {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #2352de;
+  margin-bottom: 21px;
+}
+.contact__list {
+  display: flex;
+  margin-top: 21px;
+}
+.contact__item {
+  margin-right: 20px;
+}
+.contact__link {
+  display: block;
+  font-size: 0;
+  width: 44px;
+  height: 44px;
+  position: relative;
+}
+.contact__link::before {
+  content: "";
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact__link--instagram::before {
+  background-image: url(./img/icons/instagram.svg);
+}
+.contact__link--facebook::before {
+  background-image: url(./img/icons/facebook.svg);
+}
+.contact__link--telegram::before {
+  background-image: url(./img/icons/telegram.svg);
+  height: 39px;
+}
+.contact_lable {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  width: 100%;
+}
+.contact__form-inner {
+  display: flex;
+  margin-bottom: 30px;
+}
+.contact__area-lable {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.contact__button {
+  width: 148px;
+  height: 47px;
+  border: 0;
+  background-color: #2352de;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 152px;
+}
+.contact__input {
+  padding: 13px 15px;
+  background-color: #f6f6f8;
+  width: 100%;
+  margin-right: 30px;
+  width: 255px;
+  height: 47px;
+  margin-top: 10px;
+  border: none;
+}
+.contact__lable:first-child {
+  margin-right: 30px;
+}
+.contact__textarea {
+  display: block;
+  width: 100%;
+  width: 540px;
+  height: 115px;
+  margin-bottom: 30px;
+  border: none;
+  background-color: #f6f6f8;
+  resize: vertical;
+  
+}
