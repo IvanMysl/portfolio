@@ -262,27 +262,34 @@ body {
 
 .skils {
   background-color: #f6f6f8;
-  padding-top: 142px;
+  padding: 140px 0;
+}
+.skils__title {
+  font-size: 48px;
+  line-height: 130%;
+  padding-bottom: 60px;
 }
 .skils__inner-all {
   display: flex;
-
   align-items: center;
+  justify-content: space-between;
 }
 .skils__img {
-  padding-bottom: 140px;
-  margin-bottom: 140px;
+  max-width: 415px;
+  width: 100%;
+  margin-right: 20px;
 }
 .skils__list {
-  margin-left: 90px;
+  max-width: 600px;
+  width: 100%;
 }
 .skils__item {
-  margin-top: 85.71px;
   display: flex;
   align-items: center;
+  margin-bottom: 85px;
 }
-.skils__item:first-child {
-  margin-top: 0;
+.skils__item:last-child {
+  margin-bottom: 0;
 }
 .skils__in {
   font-weight: 600;
@@ -299,10 +306,30 @@ body {
 }
 .skils__graphic {
   background-color: #dbdbed;
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   height: 32px;
+  min-width: 300px;
+}
+@media screen and (max-width: 992px) {
+  .skils__inner-all {
+    flex-direction: column;
+  }
+  .skils__img {
+    margin-bottom: 50px;
+    margin-right: 0;
+  }
+  .skils__item {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .skils__graphic {
+    min-width: 150px;
+  }
 }
 
+/* services */
 .services {
   background: #ffffff;
   padding-top: 140px;
@@ -327,60 +354,84 @@ body {
 .services__logo {
   margin-bottom: 30px;
 }
+@media screen and (max-width: 768px) {
+  .services__text {
+    max-width: 200px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .services__list {
+    display: block;
+  }
+  .text1 {
+    margin-bottom: 100px;
+  }
+}
 
+/* project */
 .project {
   padding-top: 140px;
 }
-.project__line {
-  display: flex;
+.project__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
-.project__item {
-  margin-right: 44px;
-  margin-top: 44px;
+.project__img {
+  max-width: 360px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+  max-height: 360px;
+  height: 100%;
 }
-.project__item:last-child {
-  margin-right: 0;
+.project__link {
+  display: inline-block;
+  position: relative;
+  height: 100%;
 }
-.project__image::before {
+.project__link::before {
   content: "";
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  position: absolute;
   background-color: transparent;
   transition: background-color 0.3s linear;
 }
-.project__image::after {
+.project__link::after {
   content: "";
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 30px;
   height: 20px;
-  position: absolute;
-  background-image: url(./img/icons/vector.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
-.project__projects{
-  max-width: 360px;
-  width: 100%;
-  max-height: 360px;
-  height: 100%;
-  cursor: pointer;
-}
-.project__link:hover .project__image::before {
+.project__link:hover.project__link::before {
   background-color: rgba(110, 156, 159, 0.64);
 }
-.project__link:hover .project__image::after {
+.project__link:hover.project__link::after {
   background-image: url(./img/icons/vector.svg);
 }
-
+@media screen and (max-width: 768px) {
+  .project__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 320px) {
+  .project__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 /* contact */
-.contact{
+.contact {
   padding-top: 136px;
 }
 .contact__inner {
@@ -397,11 +448,11 @@ body {
   line-height: 160%;
   margin-bottom: 30px;
 }
-.contact__form{
+.contact__form {
   max-width: 540px;
   width: 100%;
 }
-.contact__form-text{
+.contact__form-text {
   margin-bottom: 10px;
 }
 .contact__number {
@@ -453,21 +504,20 @@ body {
   background-image: url(./img/icons/telegram.svg);
   height: 39px;
 }
-.contact_lable {
+.contact__lable {
   display: flex;
   flex-direction: column;
-  margin-right: 10px;
-  width: 100%;
 }
 .contact__form-inner {
   display: flex;
   margin-bottom: 30px;
+  max-width: 540px;
+  width: 100%;
 }
 .contact__area-lable {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
-  width: 100%;
 }
 
 .contact__button {
@@ -477,6 +527,7 @@ body {
   background-color: #2352de;
   font-size: 18px;
   color: #fff;
+  cursor: pointer;
   margin-bottom: 152px;
 }
 .contact__input {
@@ -485,21 +536,39 @@ body {
   width: 100%;
   margin-right: 30px;
   width: 255px;
-  height: 47px;
   margin-top: 10px;
   border: none;
 }
-.contact__lable:first-child {
-  margin-right: 30px;
-}
 .contact__textarea {
   display: block;
-  width: 100%;
-  width: 540px;
   height: 115px;
   margin-bottom: 30px;
   border: none;
   background-color: #f6f6f8;
   resize: vertical;
-  
 }
+@media screen and (max-width:992px) {
+  .contact__inner{
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__social{
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width:992px) {
+  .contact__form-inner{
+    flex-direction: column;
+  }
+  .contact__input{
+    max-width: 768px;
+    width: 100%;  
+  }
+  .contact__lable:first-child{
+    padding-bottom: 20px;
+  }
+  .contact__textarea{
+    padding: 13px 15px;
+  }
+  }
+

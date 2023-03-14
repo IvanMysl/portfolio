@@ -16,16 +16,16 @@
           </a>
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#">Про мене</a>
+              <a class="nav__link" href="#about">Про мене</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Навички</a>
+              <a class="nav__link" href="#skils">Навички</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Портфоліо</a>
+              <a class="nav__link" href="#project">Портфоліо</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Контакти</a>
+              <a class="nav__link" href="#contact">Контакти</a>
             </li>
           </ul>
           <button class="menu-btn">
@@ -41,7 +41,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <p class="title">Про мене</p>
         <p class="about__text">
@@ -60,13 +60,11 @@
       </div>
     </section>
 
-    <section class="skils">
+    <section class="skils" id="skils">
       <div class="container">
+        <h2 class="skils__title">Навички</h2>
         <div class="skils__inner-all">
-          <div class="inner__left">
-            <p class="title">Навички</p>
-            <img src="./img/myfoto.jpg" alt="myfoto" class="skils__img" />
-          </div>
+          <img class="skils__img" src="./img/myfoto.jpg" alt="myfoto" />
           <ul class="skils__list">
             <li class="skils__item">
               <p class="skils__in">HTML</p>
@@ -101,7 +99,7 @@
               alt="logo1"
             />
             <p class="services__description">Вёрстка проектов</p>
-            <p class="services__text">
+            <p class="services__text text1">
               Сделаю качественную вёрстку вашего проекта по предоставленному
               макету или примеру
             </p>
@@ -121,91 +119,65 @@
         </ul>
       </div>
     </section>
-    <section class="project">
+    <section class="project" id="project">
       <div class="container">
-        <p class="title">Мої проекти</p>
+        <h2 class="title">Мої проекти</h2>
         <ul class="project__list">
-          <li class="project__big-item">
-            <ul class="project__line">
-              <li class="project__item">
-                <a class="project__link" href="../carbonara/index.html">
-                <div class="project__image">
-                  <img
-                    class="project__projects"
-                    src="../carbonara/image/fon.jpg"
-                    alt="carbonara"
-                  />
-                </div>
-              </a>
-              </li>
-              <li class="project__item">
-                <a class="project__link" href="../lesson4/index2.html">
-                <div class="project__image">
-                  <img
-                    class="project__projects"
-                    src="../lesson4/Image/images.jpg"
-                    alt="MOPE"
-                  />
-                </div>
-              </a>
-              </li>
-              <li class="project__item">
-                <a class="project__link" href="../Homework/index2.html">
-                <div class="project__image">
-                  <img
-                    class="project__projects"
-                    src="../Homework/image/kemer.jpg"
-                    alt="kemer"
-                  />
-                </div>
-              </a>
-              </li>
-            </ul>
+          <li class="project__item">
+            <a
+              class="project__link"
+              href="https://ivanmysl.github.io/neapol/"
+              target="_blank"
+              ><img
+                class="project__img"
+                src="./img/project1.jpg"
+                alt="carbonara"
+            /></a>
           </li>
-          <li class="project__big-item">
-            <ul class="project__line">
-              <li class="project__item">
-                <a class="project__link" href="../lessonvicki/index.html">
-                <div class="project__image">
-                  <img
-                    class="project__projects"
-                    src="../lessonvicki/image/fon.jpg"
-                    alt="lessonvicki"
-                  />
-                </div>
-              </a>
-              </li>
-              <li class="project__item">
-                <a class="project__link" href="../farmzi/index.html">
-                <div class="project__image">
-                  <img
-                    class="project__projects"
-                    src="../farmzi/img/frame.jpeg"
-                    alt="farmzi"
-                  />
-                </div>
-              </a>
-              </li>
-              <li class="project__item">
-                <a class="project__link" href="../womazing/index.html">
-                <div class="project__image">
-                  <img
-                    class="project__projects"
-                    src="../womazing/img/home/team.jpg"
-                    alt="womazing"
-                  />
-                </div>
-              </a>
-              </li>
-            </ul>
+          <li class="project__item">
+            <a
+              class="project__link"
+              href="https://ivanmysl.github.io/Farmzi/"
+              target="_blank"
+              ><img class="project__img" src="./img/project2.jpeg" alt="farmzi"
+            /></a>
+          </li>
+          <li class="project__item">
+            <a class="project__link" href="https://ivanmysl.github.io/womazing/"
+              ><img
+                class="project__img"
+                src="./img/project3.jpg"
+                alt="womazing"
+            /></a>
+          </li>
+          <li class="project__item">
+            <a class="project__link" href="#" target="_blank"
+              ><img class="project__img" src="./img/project4.jpg" alt="MOPE"
+            /></a>
+          </li>
+          <li class="project__item">
+            <a class="project__link" href="#" target="_blank"
+              ><img
+                class="project__img"
+                src="./img/project5.jpg"
+                alt="lessonvicki"
+            /></a>
+          </li>
+          <li class="project__item">
+            <a class="project__link" href="#" target="_blank"
+              ><img
+                class="project__img"
+                src="./img/project6.jpg"
+                alt="Sea-sities"
+            /></a>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
-        <p class="title">Контакты</p>
+        <p class="title contact__title">Контакты</p>
         <div class="contact__inner">
           <div class="contact__social">
             <p class="contact__text">
@@ -235,7 +207,7 @@
               </li>
             </ul>
           </div>
-          <form class="contact__form">
+          <form class="form contact__form">
             <div class="contact__form-inner">
               <lable class="contact__lable">
                 <p class="contact__form-text">Ваше имя</p>
@@ -262,7 +234,6 @@
                 class="contact__textarea"
                 name="message"
                 placeholder="Текст вашего сообщения"
-                name="text"
               ></textarea>
             </lable>
             <button class="contact__button">Отправить</button>
