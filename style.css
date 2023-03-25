@@ -61,6 +61,12 @@ body {
   z-index: 1;
   color: #fff;
 }
+.home__sub-title {
+  font-size: 90px;
+  line-height: 123px;
+  max-width: 640px;
+  width: 100%;
+}
 .home::before {
   content: "";
   position: absolute;
@@ -77,6 +83,18 @@ body {
   flex-direction: column;
   justify-content: center;
   height: calc(100vh - 200px);
+}
+@media screen and (max-width:768px) {
+  .home__sub-title{
+    font-size: 78px;
+    line-height: 88px;
+  }
+}
+@media screen and (max-width:480px) {
+  .home__sub-title{
+    font-size: 55px;
+    line-height: 65px;
+  }
 }
 .nav {
   display: flex;
@@ -547,28 +565,27 @@ body {
   background-color: #f6f6f8;
   resize: vertical;
 }
-@media screen and (max-width:992px) {
-  .contact__inner{
+@media screen and (max-width: 992px) {
+  .contact__inner {
     flex-direction: column;
     align-items: center;
   }
-  .contact__social{
+  .contact__social {
     padding-bottom: 60px;
   }
 }
-@media screen and (max-width:992px) {
-  .contact__form-inner{
+@media screen and (max-width: 992px) {
+  .contact__form-inner {
     flex-direction: column;
   }
-  .contact__input{
+  .contact__input {
     max-width: 768px;
-    width: 100%;  
+    width: 100%;
   }
-  .contact__lable:first-child{
+  .contact__lable:first-child {
     padding-bottom: 20px;
   }
-  .contact__textarea{
+  .contact__textarea {
     padding: 13px 15px;
   }
-  }
-
+}
