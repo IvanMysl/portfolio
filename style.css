@@ -60,6 +60,7 @@ body {
   position: relative;
   z-index: 1;
   color: #fff;
+  margin-bottom: 139px;
 }
 .home__sub-title {
   font-size: 90px;
@@ -84,14 +85,14 @@ body {
   justify-content: center;
   height: calc(100vh - 200px);
 }
-@media screen and (max-width:768px) {
-  .home__sub-title{
+@media screen and (max-width: 768px) {
+  .home__sub-title {
     font-size: 78px;
     line-height: 88px;
   }
 }
-@media screen and (max-width:480px) {
-  .home__sub-title{
+@media screen and (max-width: 480px) {
+  .home__sub-title {
     font-size: 55px;
     line-height: 65px;
   }
@@ -134,13 +135,14 @@ body {
     display: none;
     position: absolute;
     right: 0;
-    top: -70px;
+    top: 0px;
     flex-direction: column;
     align-items: center;
     margin: 0;
     font-size: 45px;
-    background-color: rgb(243, 16, 16);
+    background-color: rgb(93, 41, 234);
     padding: 150px 0 130px 0;
+    max-width: 320px;
     height: 100vh;
     width: 100%;
     z-index: 2;
@@ -258,7 +260,6 @@ body {
 }
 
 .about {
-  margin-top: 139px;
   margin-bottom: 138px;
 }
 .about__title {
@@ -276,6 +277,16 @@ body {
 }
 .about__text:last-child {
   margin-top: 30px;
+}
+@media screen and (maw-width: 480px) {
+  .about {
+    margin-bottom: 70px;
+  }
+}
+@media screen and (maw-width: 320px) {
+  .about {
+    margin-bottom: 35px;
+  }
 }
 
 .skils {
@@ -345,12 +356,20 @@ body {
   .skils__graphic {
     min-width: 150px;
   }
+  .skils {
+    padding: 70px 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .skils {
+    padding: 35px 0;
+  }
 }
 
 /* services */
 .services {
   background: #ffffff;
-  padding-top: 140px;
+  padding: 140px 0;
 }
 .services__list {
   display: flex;
@@ -382,14 +401,22 @@ body {
   .services__list {
     display: block;
   }
+  .services {
+    padding: 70px 0;
+  }
   .text1 {
     margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .services {
+    padding: 35px 0;
   }
 }
 
 /* project */
 .project {
-  padding-top: 140px;
+  padding: 140px 0;
 }
 .project__list {
   display: grid;
@@ -442,15 +469,27 @@ body {
   .project__list {
     grid-template-columns: repeat(2, 1fr);
   }
+  .project {
+    padding: 105px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .project {
+    padding: 70px 0;
+  }
 }
 @media screen and (max-width: 320px) {
   .project__list {
     grid-template-columns: repeat(1, 1fr);
   }
+  .project {
+    padding: 35px 0;
+  }
 }
+
 /* contact */
 .contact {
-  padding-top: 136px;
+  padding: 140px 0;
 }
 .contact__inner {
   display: flex;
@@ -460,11 +499,19 @@ body {
   max-width: 530px;
   width: 100%;
 }
+.contact__title {
+  font-size: 48px;
+  line-height: 130%;
+}
 .contact__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
   margin-bottom: 30px;
+}
+.contact__form-text {
+  font-size: 14px;
+  line-height: 130%;
 }
 .contact__form {
   max-width: 540px;
@@ -587,5 +634,10 @@ body {
   }
   .contact__textarea {
     padding: 13px 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contact {
+    padding: 70px 0;
   }
 }
