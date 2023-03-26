@@ -8,7 +8,7 @@
     <title>Портфоліо</title>
   </head>
   <body>
-    <section class="home" style="background-image: url(./img/1.jpg)">
+    <section class="home" style="background-image: url(./img/1.jpg)" id="home">
       <div class="container">
         <nav class="nav">
           <a class="logo" href="#">
@@ -33,7 +33,7 @@
           </button>
         </nav>
 
-        <div class="home__inner"> 
+        <div class="home__inner">
           <p class="home__title">Привіт, я Анонім</p>
           <h1 class="home__sub-title">frontend- розробник</h1>
         </div>
@@ -241,6 +241,14 @@
         </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <a href="#home" class="footer__link"
+          ><img class="footer__logo" src="./img/icons/logo.svg" alt="logo"
+        /></a>
+      </div>
+    </footer>
     <script src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>

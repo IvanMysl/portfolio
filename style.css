@@ -519,6 +519,8 @@ body {
 }
 .contact__form-text {
   margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 130%;
 }
 .contact__number {
   color: #2352de;
@@ -639,5 +641,28 @@ body {
 @media screen and (max-width: 480px) {
   .contact {
     padding: 70px 0;
+  }
+}
+
+/* footer */
+.footer{
+  padding: 140px 0;
+  background-color: #343740;
+  max-width: 1920px;
+  width: 100%;
+}
+.footer__inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width:480px) {
+  .footer{
+    padding: 70px 0;
+  }
+}
+@media screen and (max-width:320px){
+  .footer{
+    padding: 35px 0;
   }
 }
