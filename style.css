@@ -643,6 +643,11 @@ body {
     padding: 70px 0;
   }
 }
+@media screen and (max-width: 480px){
+  .contact{
+    padding: 35px 0;
+  }
+}
 
 /* footer */
 .footer{
