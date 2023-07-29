@@ -487,6 +487,95 @@ body {
   }
 }
 
+/* strange */
+.strange__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 247px;
+}
+.strange__item {
+  background-color: #f6f6f8;
+  max-width: 280px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.strange--bag::before {
+  content: "";
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  top: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: contain;
+  background-image: url(./img/icons/bag.svg);
+}
+.strange--clients::before {
+  content: "";
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  top: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: contain;
+  background-image: url(./img/icons/clients.svg);
+}
+.strange--coffee::before {
+  content: "";
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  top: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: contain;
+  background-image: url(./img/icons/coffee.svg);
+}
+.strange--review::before {
+  content: "";
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  top: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: contain;
+  background-image: url(./img/icons/review.svg);
+}
+.strange__text {
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  margin-bottom: 20px;
+  padding-top: 150px;
+}
+.strange__count {
+  color: #333;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 100%;
+  display: block;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 992px) {
+  .strange__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 320px) {
+  .strange__list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}
 /* contact */
 .contact {
   padding: 140px 0;
@@ -643,31 +732,31 @@ body {
     padding: 70px 0;
   }
 }
-@media screen and (max-width: 480px){
-  .contact{
+@media screen and (max-width: 480px) {
+  .contact {
     padding: 35px 0;
   }
 }
 
 /* footer */
-.footer{
+.footer {
   padding: 140px 0;
   background-color: #343740;
   max-width: 1920px;
   width: 100%;
 }
-.footer__inner{
+.footer__inner {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width:480px) {
-  .footer{
+@media screen and (max-width: 480px) {
+  .footer {
     padding: 70px 0;
   }
 }
-@media screen and (max-width:320px){
-  .footer{
+@media screen and (max-width: 320px) {
+  .footer {
     padding: 35px 0;
   }
 }

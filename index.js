@@ -40,4 +40,3 @@ Text: ${text}
 
   window.location.reload();
 });
-console.log(form)
