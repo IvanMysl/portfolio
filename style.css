@@ -740,12 +740,8 @@ body {
 
 /* footer */
 .footer {
-  padding: 140px 0;
+  padding: 50px 0;
   background-color: #343740;
-  max-width: 1920px;
-  width: 100%;
-}
-.footer__inner {
   display: flex;
   justify-content: center;
   align-items: center;
